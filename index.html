@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <link type="text/css" rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="calculator">
+            <h1 class="calcName">CALCULATOR</h1>
+            <div class="container">
+                <input class="displayScreen gridItem" type="text" name="disp">
+                <a class="pi gridItem" onclick="display('π')">
+                    <img src="images/pi.png"></a>
+                <a class="clear gridItem" onclick="display('clear')">C</a>
+                <a class="backspace gridItem" onclick="display('back')">
+                    <img src ="images/backspace.svg" alt ="<="/></a>
+                <a class="power gridItem" onclick="display('^')">
+                    <img src="images/carrot.png"></a>
+                <a class="squared gridItem" onclick="display('^2')">
+                    <img src="images/squared.png"></a>
+                <a class="celebrate gridItem" onclick="celebrate()"></a>
+                <a class="reciprocal gridItem" onclick="display('x')">
+                    <img src="images/reciprocal.png"></a>
+                <a class="factorial gridItem" onclick="display('!')">n!</a>
+                <a class="one gridItem" onclick="display(1)">1</a>
+                <a class="two gridItem" onclick="display(2)">2</a>
+                <a class="three gridItem" onclick="display(3)">3</a>
+                <a class="four gridItem" onclick="display(4)">4</a>
+                <a class="five gridItem" onclick="display(5)">5</a>
+                <a class="six gridItem" onclick="display(6)">6</a>
+                <a class="seven gridItem" onclick="display(7)">7</a>
+                <a class="eight gridItem" onclick="display(8)">8</a>
+                <a class="nine gridItem" onclick="display(9)">9</a>
+                <a class="zero gridItem" onclick="display(0)">0</a>
+                <a class="period gridItem" onclick="display('.')">.</a>
+                <a class="sign gridItem" onclick="display('+-')">
+                    <img src ="images/plus-minus.png" alt ="±"/></a>
+                <a class="plus gridItem" onclick="display('+')">+</a>
+                <a class="minus gridItem" onclick="display('—')">-</a>
+                <a class="times gridItem" onclick="display('*')">*</a>
+                <a class="divided gridItem" onclick="display('/')">
+                    <img src="images/division.png"></a>
+                <a class="equals gridItem" onclick="operate(equation, displayScreen)">=</a>
+            </div>
+    </div>
+    
+    <footer>
+        <p>© 2019</p>
+    </footer>
+    <script src="calculator.js"></script>
+</body>
